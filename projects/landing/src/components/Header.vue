@@ -22,7 +22,7 @@
     display: flex;
     flex-direction: column;
     place-items: flex-start;
-    max-width: 45%
+    max-width: 45%;
   }
 
   .header-wrapper > h1 {

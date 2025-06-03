@@ -1,4 +1,4 @@
-<script setup lang='ts'>
+<script setup lang="ts">
 import Card from 'primevue/card'
 import Chip from 'primevue/chip'
 import EducationItem from './EducationItem.vue'
@@ -95,30 +95,26 @@ const education = [
 </script>
 
 <template>
-  <div class='about-wrapper'>
+  <div class="about-wrapper">
     <!-- Skills -->
-    <div class='about-section-header'>
-      <span :class='`pi ${skillsIcon} local-icon`'></span>
+    <div class="about-section-header">
+      <span :class="`pi ${skillsIcon} local-icon`"></span>
       <h2>Skills</h2>
     </div>
-    <div class='about-section-content'>
-      <div v-for='skill in skills'>
-        <Chip :label='skill' />
+    <div class="about-section-content">
+      <div v-for="skill in skills">
+        <Chip :label="skill" />
       </div>
     </div>
 
     <!-- Education -->
-    <div class='about-section-header'>
-      <span :class='`pi ${educationIcon} local-icon`'></span>
+    <div class="about-section-header">
+      <span :class="`pi ${educationIcon} local-icon`"></span>
       <h2>Education, Certificates, Licenses</h2>
     </div>
-    <div class='about-section-content'>
-      <div v-for='ed in education'>
-        <EducationItem
-          :name='ed.name'
-          :school='ed.school'
-          :graduated='ed.graduated'
-        />
+    <div class="about-section-content">
+      <div v-for="ed in education">
+        <EducationItem :name="ed.name" :school="ed.school" :graduated="ed.graduated" />
       </div>
     </div>
   </div>

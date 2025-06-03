@@ -1,11 +1,11 @@
-<script setup lang='ts'>
-  import Card from 'primevue/card'
+<script setup lang="ts">
+import Card from 'primevue/card'
 
-  defineProps({
-    name: String,
-    school: String,
-    graduated: String,
-  })
+defineProps({
+  name: String,
+  school: String,
+  graduated: String,
+})
 </script>
 
 <template>
@@ -13,11 +13,10 @@
     <template #title>{{ name }} ({{ graduated }})</template>
     <template #subtitle>{{ school }}</template>
   </Card>
-
 </template>
 
 <style scoped>
-  .p-card {
-    min-width: 500px;
-  }
+.p-card {
+  min-width: 500px;
+}
 </style>

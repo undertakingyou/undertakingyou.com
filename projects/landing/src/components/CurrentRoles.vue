@@ -1,21 +1,20 @@
-<script setup lang='ts'>
-  import Role from './Role.vue'
+<script setup lang="ts">
+import Role from './Role.vue'
 
-  const roles = [
-    {
-      title: 'CTO / Co-Owner',
-      company: 'Cemetek',
-      description: 'Cemetery and Funeral Home software development.',
-      link: 'https://cemetek.com',
-    },
-    {
-      title: 'Founder / Principal Engineer',
-      company: 'Open By Design',
-      description: 'Freelance devops and web application development.',
-      link: 'https://openbydesign.net'
-    }
-  ]
-
+const roles = [
+  {
+    title: 'CTO / Co-Owner',
+    company: 'Cemetek',
+    description: 'Cemetery and Funeral Home software development.',
+    link: 'https://cemetek.com',
+  },
+  {
+    title: 'Founder / Principal Engineer',
+    company: 'Open By Design',
+    description: 'Freelance devops and web application development.',
+    link: 'https://openbydesign.net',
+  },
+]
 </script>
 
 <template>
@@ -29,5 +28,4 @@
       />
     </div>
   </div>
-
 </template>
